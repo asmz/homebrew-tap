@@ -5,21 +5,21 @@
 class Agedir < Formula
   desc "age encryption-based secret file manager"
   homepage "https://github.com/asmz/agedir"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/asmz/agedir/releases/download/v1.0.3/agedir_1.0.3_darwin_amd64.tar.gz"
-      sha256 "447c6962cf0a94c2e52e8442fe0d728a140d6f6c6c8d2a63686a9cad257245fa"
+      url "https://github.com/asmz/agedir/releases/download/v1.1.0/agedir_1.1.0_darwin_amd64.tar.gz"
+      sha256 "83800a5fef53d93500c77250f42625c2571a5df6d7b5a85ed6f8546c04810642"
 
       define_method(:install) do
         bin.install "agedir"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/asmz/agedir/releases/download/v1.0.3/agedir_1.0.3_darwin_arm64.tar.gz"
-      sha256 "04c02da4dd7b114fceb258f3bf39dd3750950eb26ba863dfd809509830494398"
+      url "https://github.com/asmz/agedir/releases/download/v1.1.0/agedir_1.1.0_darwin_arm64.tar.gz"
+      sha256 "401899dc81b6f8ea1f587ed3b7a4b118bdb23867c0584c982fc8b80b5b38353e"
 
       define_method(:install) do
         bin.install "agedir"
@@ -29,15 +29,15 @@ class Agedir < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asmz/agedir/releases/download/v1.0.3/agedir_1.0.3_linux_amd64.tar.gz"
-      sha256 "da3ee98e4f34148b239905ef576b14363b5790cc9436711ae7cdb2ef0ccf6244"
+      url "https://github.com/asmz/agedir/releases/download/v1.1.0/agedir_1.1.0_linux_amd64.tar.gz"
+      sha256 "c9b9753d6c435075d015a72a1bda96e3211103dbf024137bec03dac5b1284715"
       define_method(:install) do
         bin.install "agedir"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asmz/agedir/releases/download/v1.0.3/agedir_1.0.3_linux_arm64.tar.gz"
-      sha256 "9506d669e14668042cb968d80b839626385dfe515b84199a734ed170a5850970"
+      url "https://github.com/asmz/agedir/releases/download/v1.1.0/agedir_1.1.0_linux_arm64.tar.gz"
+      sha256 "5e0a7da05a855d1be3a04dcc9223c7bf50e97616f9ed98d92557567af6f6d7e5"
       define_method(:install) do
         bin.install "agedir"
       end
